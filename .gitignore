@@ -1,0 +1,22 @@
+# secrets and local config
+.env
+*.env
+!.env.example
+*.p8
+*.pem
+.databrickscfg
+
+# generated data
+producer/data/*.csv
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# os / editors
+.DS_Store
+.idea/
+.vscode/
