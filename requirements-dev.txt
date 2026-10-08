@@ -1,0 +1,4 @@
+# Local tests and lint (Databricks provides Spark at runtime)
+pyspark==4.0.1
+pytest
+ruff
