@@ -4,6 +4,11 @@ Real-time credit card fraud alerting on Databricks: a Python simulator publishes
 
 ## Architecture
 
+[![FinGuard architecture](architecture.png)](architecture.png)
+
+<details>
+<summary>Text version</summary>
+
 ```
 LOCAL                                   CLOUD
 producer/ (Python) ──► Confluent Kafka ──► bronze.transactions ──► silver.transactions ─┐
@@ -19,6 +24,8 @@ Watchlist JSON files ──► UC Volume ──► Auto Loader ──► bronze.
                     └──► Databricks dashboard
             Orchestration: Lakeflow Jobs · Governance: Unity Catalog
 ```
+
+</details>
 
 ## Repository structure
 
