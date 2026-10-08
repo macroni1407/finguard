@@ -6,7 +6,7 @@ import random
 import signal
 
 from confluent_kafka import Producer
-
+ 
 from config import load_settings
 from customer_generator import CustomerGenerator
 from fraud_engine import FraudEngine
