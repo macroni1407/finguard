@@ -7,7 +7,7 @@ import signal
 import time
 
 from confluent_kafka import Producer
-
+ 
 from config import Settings, load_settings
 from customer_generator import CustomerGenerator
 from fraud_engine import FraudEngine
