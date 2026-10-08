@@ -34,7 +34,7 @@ def _prepare_transaction(txn):
     txn.card_number = CARD_NUMBER
     return txn
 
-
+ 
 def _create_producer(settings) -> Producer:
     config = {
         "bootstrap.servers": settings.bootstrap_servers,
