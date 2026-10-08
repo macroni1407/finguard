@@ -1,0 +1,15 @@
+target-version = "py311"
+line-length = 120
+src = ["producer", "databricks/pipelines"]
+
+[lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[lint.per-file-ignores]
+# Databricks notebooks and pipeline files use the runtime globals spark, dbutils, display
+"databricks/**/*.py" = ["F821"]
+# notebook cells import where they are used
+"databricks/notebooks/*.py" = ["F821", "E402"]
+
+[lint.isort]
+known-first-party = ["finguard_lib"]
